@@ -1,3 +1,22 @@
+""" Pre-Installation Process
+
+1. Install Python 3.11 (MediaPipe doesn't support 3.13 yet)
+   
+2. Install required packages:
+   pip install opencv-python
+   pip install mediapipe==0.10.21
+   pip install pyserial
+   
+   Note: Use mediapipe version 0.10.21
+   (version 0.10.31 has compatibility issues)
+
+4. Configure COM port:
+   - Open Arduino IDE -> Tools -> Port
+   - Note your ESP32's COM port
+   - Update line 30 in this file with your COM port
+
+5. Upload ESP32 firmware to microcontroller before running python file"""
+
 import cv2
 import mediapipe as mp
 import serial
